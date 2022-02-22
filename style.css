@@ -6,4 +6,135 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(240, 240, 240);
+  color: rgb(54, 46, 46);
+}
+
+/* go to github btn */
+.go_to_github{
+  background: #1a191f;
+  max-width: 100%;
+  min-height: 50px;
+  border-bottom-right-radius: 25px ;
+  border-bottom-left-radius: 25px;
+  transition: all .3s;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 50px;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+}
+.fa-circle-chevron-up{
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+.go_to_github .btn a{
+
+  background: transparent;
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  border: 4px solid rgb(240, 240, 240);
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  transition: all .3s;
+}
+.go_to_github .btn a:hover{
+  background: rgb(240, 240, 240);
+  color: #1a191f;
+}
+
+.hide_go_to_github{
+  transform: translateY(-120px);
+  
+
+}
+
+/* start the header section */
+
+header{
+  margin: 30px 0;
+}
+
+header h1{
+  text-align: center;
+  font-size: 38px;
+  
+  letter-spacing: 2px;
+}
+
+header h1 span{
+  background: rgb(54, 46, 46);
+  color: rgb(240, 240, 240);
+  border-radius: 4px;
+  padding: 0 7px;
+}
+
+/* loader */
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.438);
+  
+}
+
+.loader img{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%, -50%);
+  
+
+}
+
+/* image container */
+
+.image-container{
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+}
+.image-container img{
+  width: 100%;
+  margin: 0 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header h1{
+    font-size: 28px;
+  }
+  .fa-circle-chevron-up{
+    font-size: 22px;
+  }
+  .go_to_github .btn a{
+    border: 2px solid rgb(240, 240, 240);
+    font-size: 14px;
+  }
+  .go_to_github{
+    min-height: 38px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header h1{
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  header h1{
+    font-size: 16px;
+  }
 }
